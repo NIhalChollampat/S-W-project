@@ -1,17 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: #4CAF50;
+    background-color: #2e7d32;
     color: white;
-    padding: 10px 0;
-    text-align: center;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
-       /*using nav elements to target li elements nested within an ul element (W3 schoools)*/
+
+#logo img {
+    height: 50px;
+}
+
 nav ul {
     list-style: none;
     padding: 0;
@@ -19,23 +24,67 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-left: 20px;
 }
 
-nav a {
+nav ul li a {
     color: white;
     text-decoration: none;
 }
 
-section {
+.hero {
+    position: relative;
+    overflow: hidden;
+}
+
+.hero video {
+    width: 100%;
+    height: auto;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+.causes {
+    padding: 20px;
+    text-align: center;
+}
+
+.cause {
+    display: inline-block;
+    margin: 20px;
+    width: 30%;
+}
+
+.cause img {
+    width: 100%;
+    height: auto;
+}
+
+.get-involved {
+    text-align: center;
     padding: 20px;
 }
 
+.get-involved button {
+    padding: 10px 20px;
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 footer {
+    background-color: #333;
+    color: white;
     text-align: center;
     padding: 10px 0;
-    background: #333;
-    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
